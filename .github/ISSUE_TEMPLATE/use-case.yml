@@ -1,0 +1,50 @@
+name: Use case idea
+description: Suggest a use case for the Decision Map. No code or Git needed.
+title: "[Use case] "
+labels: ["use-case", "good first issue"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing. Keep it short and plain. A maintainer can turn this into a file for you.
+  - type: input
+    id: name
+    attributes:
+      label: Use case name
+      description: A short name, like "Meeting notes summarizer".
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: Who has this problem and what is painful about it today?
+    validations:
+      required: true
+  - type: dropdown
+    id: piece
+    attributes:
+      label: Which Bedrock piece would you reach for?
+      options:
+        - Model call
+        - Knowledge Base (RAG)
+        - Agent
+        - Guardrails
+        - A mix of these
+        - Not sure yet
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why that piece?
+      description: One or two sentences is fine. "Not sure" is also fine.
+  - type: textarea
+    id: watchout
+    attributes:
+      label: One thing to watch out for
+      description: Cost, privacy, wrong answers, or anything else.
+  - type: input
+    id: handle
+    attributes:
+      label: GitHub handle for credit (optional)

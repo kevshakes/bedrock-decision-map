@@ -1,0 +1,16 @@
+# Secrets
+.env
+*.pem
+.aws/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Keep real CVs out of the repo
+private/
+my_cv*
+*.docx
+*.pdf
